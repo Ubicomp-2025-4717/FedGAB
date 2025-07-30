@@ -34,9 +34,6 @@ class Classification(object):
         else:
             return "Unrecognized attribute name '" + n + "'"
 
-    #---------------------------------------------------#
-    #   初始化classification
-    #---------------------------------------------------#
     def __init__(self, **kwargs):
         self.__dict__.update(self._defaults)
         for name, value in kwargs.items():
